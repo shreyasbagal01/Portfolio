@@ -269,11 +269,16 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "What We Provide";
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
+    width: calc(100% / 3 - 20px); /* Adjust the width based on the number of cards per row */
+    margin: 10px; /* Adjust margin as needed */
+    display: inline-block;
+    vertical-align: top;
+    background:#222;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -306,7 +311,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "what We know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -443,7 +448,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "Get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
